@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+body{
+    font-family: "Rubik", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    padding-bottom: 50px;
+    /* background-color: #fdfdff!important; */
+}
+
+:root {
+    --main-bg-color: yellowgreen;
+}
+
+/* Scroll */
+/* #scroll {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+
+#scroll > div {
+    scroll-snap-align: start;
+    flex: none;
+}
+
+#scroll::-webkit-scrollbar {
+    display: none; 
+} */
+
+
+/* Nav */
+#nav ul li{
+    list-style: none;
+}
+
+#nav ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#nav ul li:last-child{
+    list-style: none;
+    background-color: var(--main-bg-color);
+    color: white;
+}
+
+/* Title */
+#title{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+#title h1{
+    font-weight: 700;
+    font-size: 50px;
+    width: 700px;
+}
+
+#title p{
+    width: 500px;
+}
+
+/* Cards */
+#cards{
+    height: 200px;
+}
+
+.ccard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 30px 25px 30px 25px;
+    background-color: var(--main-bg-color);
+    color: white;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    /* width: 50%; */
+}
+
+/* #cards > div:first-child{
+    margin-right: 20px;
+} */
+
+#cards i{
+    text-align: center;
+    border-radius: 50%;
+    padding: 10px;
+    border: 3px solid white;
+    width: 40px;
+    background-color: var(--main-bg-color);
+}
+
+/* Services */
+#services{
+    height: 250px;
+}
+
+#services > div{
+    margin-right: 15px;
+    height: 100%;
+    padding: 30px 20px 30px 20px;
+    background-color: #fafafa;
+    color: black;
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
+    width: 20%;
+    transition: 0.5s;
+}
+
+#services > div:last-child{
+    margin-right: 0px;
+}
+
+#services > div:hover img{
+    /* background-color: var(--main-bg-color);
+    color: white; */
+    transition: 0.5s;
+    margin-bottom: 10px;
+}
+
+#services > div:hover{
+    background-color: var(--main-bg-color);
+    color: white;
+}
+
+#services hr{
+    width: 100%;
+    border: 1px solid black;
+}
+
+#services h3{
+   text-align: center;
+}
+
+
+/* Contact */
+#contact{
+    height: 700px;
+    margin-top: 150px;
+}
+
+#contact h3{
+    font-size: 50px;
+}
+
+#contact p{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#contact button{
+    background-color: var(--main-bg-color);
+    border: none;
+    color: white;
+}
+
+#contact > div:first-child{
+    height: 100%;
+    padding: 30px 25px 30px 25px;
+    background-color: var(--main-bg-color);
+    color: white;
+    width: 50%;
+}
+
+#contact > div:last-child{
+    height: 100%;
+    padding: 30px 25px 30px 25px;
+    background-color: #fafafa;
+    color: black;
+    width: 50%;
+}
+
+#messageForm input{
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: #fafafa;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+#messageForm input:focus{
+    border-bottom: 2px solid var(--main-bg-color);
+    outline: none;
+}
+
+#messageForm textarea {
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: #fafafa;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+#messageForm textarea:focus {
+    border-bottom: 2px solid var(--main-bg-color);
+    outline: none;
+}
+
+@media only screen and (max-width: 600px){
+	/*Big smartphones [426px -> 600px]*/
+    #scroll{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #nav{
+        padding: 0 20px 0 20px !important;
+    }
+
+    /* Title */
+    #title{
+        display: block;
+        width: 100%;
+        padding: 0 20px 0 20px !important;
+    }
+
+    #title h1{
+        font-size: 40px;
+        width: 100%;
+    }
+
+    #title p{
+        color: darkgray;
+        width: 100%;
+    }
+
+    /* Cards */
+    #cards{
+        height: fit-content;
+        padding: 0 20px 0 20px !important;
+    }
+
+    .ccard{
+        margin: 10px 0 10px 0 !important;
+        height: 200px !important;
+    }
+
+    /* Services */
+    #services{
+        padding: 0 20px 0 20px !important;
+        margin-top: -10px !important;
+        display: flex !important;
+        justify-content: center !important;
+        height: fit-content !important;
+    }
+
+    #services > div:last-child{
+        display: none !important;
+    }
+
+    #services > div{
+        margin-right: 20px;
+        margin-top: 20px !important;
+        width: 45%;
+    }
+
+    #services > div:nth-child(odd){
+        margin-right: 0px;
+    }
+
+    /* Contact */
+    #contact{
+        height: 500px;
+        margin: 0 !important;
+        margin-top: 50px !important;
+        width: 100% !important;
+        padding: 0 20px 0 20px !important;
+    }
+
+    #contact h3{
+        font-size: 35px;
+    }
+
+    #contact p{
+        font-size: 18px;
+    }
+
+    #contact > div:first-child{
+        display: none !important;
+    }
+
+    #contact > div:last-child{
+        height: fit-content;
+        color: white;
+        background-color: var(--main-bg-color);
+        padding: 30px 30px 10px 30px;
+        margin: 0 !important;
+        width: 100%;
+    }
+
+    #contact button{
+        background-color: white;
+        border: none;
+        color: var(--main-bg-color);
+    }
+
+    #contact a{
+        color: white;
+    }
+
+    #messageForm input{
+        border-bottom: 1px solid white;
+        background-color: var(--main-bg-color);
+    }
+
+    #messageForm input::placeholder{
+        color: white;
+    }
+
+    #messageForm input:focus{
+        border-bottom: 2px solid black;
+    }
+
+    #messageForm textarea {
+        border-bottom: 1px solid white;
+        background-color: var(--main-bg-color);
+    }
+
+    #messageForm textarea::placeholder{
+        color: white;
+    }
+
+    #messageForm textarea:focus {
+        border-bottom: 2px solid black;
+    }
+}
